@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/dist/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/dist/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/dist/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/dist/img/favicon/site.webmanifest">
+
+  <title>iHabit</title>
+  <link rel="stylesheet" href="dist/css/styles.min.css">
+</head>
+<body>
+
+<aside class="aside">
+  <div class="aside__logo logo">
+    <img class="logo__img" src="dist/svg/logo.svg" alt="logo" width="44" height="44">
+    <p>iHabit</p>
+  </div>
+
+  <nav class="aside__nav nav">
+    <ul class="nav__list"></ul>
+
+    <button class="nav__add"><img class="nav__add-img" src="dist/svg/add.svg" alt="add" width="40" height="40"></button>
+  </nav>
+</aside>
+
+<main class="main">
+  <header class="header">
+    <h1 class="header__title">Push ups</h1>
+
+    <div class="progress">
+      <div class="progress__top">
+        <p class="progress__top-text">Progress</p>
+        <p class="progress__top-percent">80%</p>
+      </div>
+      <div class="progress__bar">
+        <div class="progress__bar-loader"></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="todos">
+    <ul class="todos__list"></ul>
+  </div>
+</main>
+
+
+<div class="cover cover--hidden ">
+  <form class="popup" action="">
+    <h2 class="popup__title">Create habit</h2>
+    <button class="popup__close" type="button">
+      <img src="dist/svg/close.svg" alt="close popup" width="20" height="20">
+    </button>
+    <div class="popup__select">
+      <p>Icon</p>
+
+      <div class="popup__select select">
+        <ul class="select__list">
+          <li class="select__item">
+            <input id="select-icon-1" class="select__input" type="radio" name="icon" value="workout" checked>
+            <label class="select__label" for="select-icon-1">
+              <img class="select__img" src="dist/svg/workout.svg" alt="workout" width="40" height="40">
+            </label>
+          </li>
+
+          <li class="select__item">
+            <input id="select-icon-2" class="select__input" type="radio" name="icon" value="water">
+            <label class="select__label" for="select-icon-2">
+              <img class="select__img" src="dist/svg/water.svg" alt="water" width="40" height="40">
+            </label>
+          </li>
+
+          <li class="select__item">
+            <input id="select-icon-3" class="select__input" type="radio" name="icon" value="food">
+            <label class="select__label" for="select-icon-3">
+              <img class="select__img" src="dist/svg/food.svg" alt="food" width="40" height="40">
+            </label>
+          </li>
+        </ul>
+      </div>
+
+      <div class="popup__creates">
+        <label class="popup__creates-label">
+          <input class="popup__creates-input" type="text" name="Title" placeholder="Title">
+        </label>
+        <label class="popup__creates-label">
+          <input class="popup__creates-input" type="number" name="Target" placeholder="Target">
+        </label>
+      </div>
+
+      <button class="popup__submit" type="submit">Add</button>
+    </div>
+  </form>
+</div>
+
+<script src="dist/js/app.js"></script>
+</body>
+</html>
